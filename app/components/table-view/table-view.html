@@ -1,1 +1,32 @@
-table-view.html
+<div class="row">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs">
+      <li ng-class="{active: tvCtrl.module === module}" ng-repeat="(module, value) in tvCtrl.messageData">
+        <a ng-href="#{{module}}/All-Messages" data-toggle="tab">
+          {{module}}
+        </a>
+      </li>
+    </ul>
+    <div class="row" style="padding: 5px 0px">
+      <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+          <li ng-class="{active: tvCtrl.type === label}" ng-repeat="label in tvCtrl.labels">
+            <a class="offsetTab" ng-href="#{{tvCtrl.module}}/{{label}}">
+              {{tvCtrl.dashesToSpace(label)}}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10">
+        <div>
+          <input type="text" ng-model="search" placeholder="Search Messages"/>
+        </div>
+        <div ng-repeat="message in tvCtrl.messageData[tvCtrl.module] | filter:search">
+          <div>
+            <p>{{message}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
