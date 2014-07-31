@@ -1,0 +1,19 @@
+{
+  "name": "angular-hint-display",
+  "version": "0.0.0",
+  "description": "A display for Angular Hint",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caguillen214/angular-hint-display.git"
+  },
+  "author": "Carlos A. Guillen",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/caguillen214/angular-hint-display/issues"
+  },
+  "homepage": "https://github.com/caguillen214/angular-hint-display"
+}

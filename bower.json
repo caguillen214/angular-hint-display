@@ -1,0 +1,22 @@
+{
+  "name": "angular-hint-display",
+  "version": "0.0.0",
+  "homepage": "http://github.com/caguillen/angular-hint-display",
+  "authors": [
+    "Carlos A. Guillen <caguillen@google.com>"
+  ],
+  "description": "A display application for Angular Hint",
+  "main": "app.js",
+  "license": "Apache 2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.21",
+    "karma": "~0.2.2"
+  }
+}
